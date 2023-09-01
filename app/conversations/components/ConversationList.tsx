@@ -99,7 +99,7 @@ const ConversationList: React.FC<ConversationListProps> = ({
         <div className="px-5">
           <div className="flex justify-between mb-4 pt-4">
             <div className="text-2xl font-bold text-neutral-800">
-              Mensages
+              Mensagens
             </div>
             <div 
               onClick={() => setIsModalOpen(true)} 
