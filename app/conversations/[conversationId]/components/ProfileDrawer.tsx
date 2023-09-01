@@ -113,7 +113,7 @@ const ProfileDrawer: React.FC<ProfileDrawerProps> = ({
                                 <IoTrash size={20} />
                               </div>
                               <div className="text-sm font-light text-neutral-600">
-                                Delete
+                                Excluir conversa
                               </div>
                             </div>
                           </div>
@@ -182,7 +182,7 @@ const ProfileDrawer: React.FC<ProfileDrawerProps> = ({
                                     sm:flex-shrink-0
                                   "
                                 >
-                                  Joined
+                                  Entrou
                                 </dt>
                                 <dd 
                                   className="

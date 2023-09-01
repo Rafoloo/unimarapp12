@@ -80,13 +80,13 @@ const SettingsModal: React.FC<SettingsModalProps> = ({
               Profile
             </h2>
             <p className="mt-1 text-sm leading-6 text-gray-600">
-              Edit your public information.
+              Edite suas informações públicas.
             </p>
 
             <div className="mt-10 flex flex-col gap-y-8">
               <Input
                 disabled={isLoading}
-                label="Name" 
+                label="Nome" 
                 id="name" 
                 errors={errors} 
                 required 
@@ -103,7 +103,7 @@ const SettingsModal: React.FC<SettingsModalProps> = ({
                     text-gray-900
                   "
                 >
-                  Photo
+                  Foto
                 </label>
                 <div className="mt-2 flex items-center gap-x-3">
                   <Image
@@ -123,7 +123,7 @@ const SettingsModal: React.FC<SettingsModalProps> = ({
                       secondary
                       type="button"
                     >
-                      Change
+                      Alterar Foto
                     </Button>
                   </CldUploadButton>
                 </div>
@@ -146,13 +146,13 @@ const SettingsModal: React.FC<SettingsModalProps> = ({
             secondary 
             onClick={onClose}
           >
-            Cancel
+            Cancelar
           </Button>
           <Button 
             disabled={isLoading}
             type="submit"
           >
-            Save
+            Salvar
           </Button>
         </div>
       </form>
