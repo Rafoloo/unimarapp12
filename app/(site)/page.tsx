@@ -17,8 +17,8 @@ const Auth = () => {
     >
       <div className="sm:mx-auto sm:w-full sm:max-w-md">
         <Image
-          height="178"
-          width="178"
+          height="48"
+          width="48"
           className="mx-auto w-auto"
           src="/images/logo.png"
           alt="Logo"
@@ -33,7 +33,7 @@ const Auth = () => {
             text-gray-900
           "
           >
-            Faça login em sua conta
+            Sign in to your account
         </h2>
       </div>
       <AuthForm />      
