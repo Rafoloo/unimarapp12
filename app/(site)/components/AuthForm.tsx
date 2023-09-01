@@ -22,7 +22,7 @@ const AuthForm = () => {
 
   useEffect(() => {
     if (session?.status === 'authenticated') {
-      router.push('/users');
+      router.push('/conversations')
     }
   }, [session?.status, router]);
 
@@ -127,7 +127,7 @@ const AuthForm = () => {
               errors={errors}
               required
               id="name" 
-              label="Nome"
+              label="Name"
             />
           )}
           <Input 
@@ -136,7 +136,7 @@ const AuthForm = () => {
             errors={errors}
             required
             id="email" 
-            label="Endereço de Email" 
+            label="Email address" 
             type="email"
           />
           <Input 
@@ -145,12 +145,12 @@ const AuthForm = () => {
             errors={errors}
             required
             id="password" 
-            label="Senha" 
+            label="Password" 
             type="password"
           />
           <div>
             <Button disabled={isLoading} fullWidth type="submit">
-              {variant === 'LOGIN' ? 'Login' : 'Registrar'}
+              {variant === 'LOGIN' ? 'Sign in' : 'Register'}
             </Button>
           </div>
         </form>
@@ -169,7 +169,7 @@ const AuthForm = () => {
             </div>
             <div className="relative flex justify-center text-sm">
               <span className="bg-white px-2 text-gray-500">
-                Ou continue em
+                Or continue with
               </span>
             </div>
           </div>
@@ -197,13 +197,13 @@ const AuthForm = () => {
           "
         >
           <div>
-            {variant === 'LOGIN' ? 'Novo no UnimarHUB' : 'Já possui uma conta?'} 
+            {variant === 'LOGIN' ? 'New to Messenger?' : 'Already have an account?'} 
           </div>
           <div 
             onClick={toggleVariant} 
             className="underline cursor-pointer"
           >
-            {variant === 'LOGIN' ? 'Crie sua conta' : 'Login'}
+            {variant === 'LOGIN' ? 'Create an account' : 'Login'}
           </div>
         </div>
       </div>
